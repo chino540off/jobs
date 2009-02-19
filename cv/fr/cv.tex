@@ -1,0 +1,106 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[frenchb]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.91]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Olivier}
+\familyname{D\'etour}
+\birth{N\'e le 18 septembre 1985}{\`a Clermont Ferrand}
+\title{\'Etudiant EPITA}               % optional, remove the line if not wanted
+\address{33 rue Croulebarbe}{75013 Paris}    % optional, remove the line if not wanted
+\mobile{06 13 15 85 55}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{detour.olivier@gmail.com}                      % optional, remove the line if not wanted
+\extrainfo{Permis de conduire} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{curriculum vitae}                 % optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Formation}
+\cventry{2002--2003}{Bac S sp\'e math\'ematiques}{Lyc\'ee Georges Dum\'ezil}{}{\textit{Vernon (27)}}{}  % arguments 3 to 6 are optional
+\cventry{2003--2004}{1\iere ann\'ee pr\'eparatoire}{ESGI}{}{\textit{Paris 75019}}{}  % arguments 3 to 6 are optional
+\cventry{2004--2006}{Ann\'ees pr\'eparatoires}{EPITA}{}{\textit{Villejuif 94800}}{}  % arguments 3 to 6 are optional
+\cventry{2006--2007}{1\iere ann\'ee d'ing\'enierie}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}  % arguments 3 to 6 are optional
+\cventry{2008}{Sp\'ecialisation Syst\`eme, R\'eseaux et S\'ecurit\'e}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}  % arguments 3 to 6 are optional
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 are optional
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Exp\'eriences}
+\subsection{Emplois}
+\cventry{2003--2004}{Missions d'int\'erim}{}{Vernon}{}{Inventaires dans des grandes surfaces}                % arguments 3 to 6 are optional
+\cventry{2006}{Stage dans un service technique}{SGT}{Champs-sur-Marne}{}{Installation de machines pour les clients de la soci\'et\'e}                % arguments 3 to 6 are optional
+\cventry{2007}{Stage de tronc commun}{Ordissimo}{Paris}{}{Developpement du gestionnaire de fichier Sfiler en C++}                % arguments 3 to 6 are optional
+\subsection{Tutorat}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+\cventry{2005--2006}{Soutien de math\'ematiques}{}{}{}{Cours pour une \'el\`eve de 1\iere ES}% arguments 3 to 6 are optional
+\cventry{2008}{Assistant YAKA/ACU 2009}{}{}{}{Encadrement de la Piscine et de nombreux projets}% arguments 3 to 6 are optional
+
+\section{Comp\'etences Informatique}
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvcomputer{Langages:}{C, C++, Java, Ruby, Delphi, Caml, ASM, \LaTeX, ScriptShell (Unix), Python, Sed/Awk, Flex/Bison, Autotools}{Syst\`emes:}{Linux (Gentoo, Debian, Arch\dots), BSD (OpenBSD, FreeBSD, NetBSD), Windows (XP, 2003, Vista)}
+\cvcomputer{Projets EPITA:}{Shell (42sh), Compilateur (Tiger), Syst\`eme (Kaneton), Projets math\'ematiques}{Concepts:}{Virologie, Cryptologie, Architecture de s\'ecurit\'e, Gestion de risque, Techniques d'attaques}
+
+\section{Langues}
+%\cvlanguage{language 1}{Skill level}{Comment}
+\cvlanguage{Anglais}{TOEIC 775 points}{lu, parl\'e, \'ecrit, plusieurs s\'ejours en pays anglophones}
+\cvlanguage{Espagnol}{Bac}{notions}
+
+\section{Loisirs}
+\cvline{Sport}{\small Basket Ball: pratique r\'eguli\`ere sur Paris, Roller avec des amis}
+\cvline{Cinéma}{\small Tous genres}
+\cvline{Musique}{\small Tous genres}
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
