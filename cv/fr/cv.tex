@@ -9,45 +9,34 @@
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-%\moderncvtheme[blue]{casual}					% optional argument are 'blue' (default),
-								% 'orange', 'red', 'green', 'grey' and
-								% 'roman' (for roman fonts, instead of sans
-								% serif fonts)
-\moderncvtheme[blue]{classic}					% idem
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
 
 % character encoding
-\usepackage[utf8]{inputenc}					% replace by the encoding you are using
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 \usepackage[frenchb]{babel}
 
 % adjust the page margins
 \usepackage[scale=0.91]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}				% if you want to change the width of the
-								% column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}		% only for the classic theme, if you want to
-								% change the width of your name placeholder
-								% (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     	% required when changes are made to page layout
-								% lengths
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
 % personal data
 \firstname{Olivier}
 \familyname{Détour}
 \birth{Né le 18 septembre 1985}{à Clermont Ferrand}
-\title{Stagiaire Thales Communication}				% optional, remove the line if not wanted
-\address{33 rue Croulebarbe}{75013 Paris}			% optional, remove the line if not wanted
-\mobile{06 13 15 85 55}						% optional, remove the line if not wanted
-%\phone{phone (optional)}					% optional, remove the line if not wanted
-%\fax{fax (optional)}						% optional, remove the line if not wanted
-\email{detour.olivier@gmail.com}				% optional, remove the line if not wanted
-\extrainfo{Permis de conduire}					% optional, remove the line if not wanted
-%\photo[64pt]{picture}						% '64pt' is the height the picture must be
-								% resized to and 'picture' is the name of
-								% the picture file; optional, remove the
-								% line if not wanted
-\quote{curriculum vitae}					% optional, remove the line if not wanted
+\title{\Large{Ingénieur système \& télécom}}
+\address{33 rue Croulebarbe}{75013 Paris}	% optional, remove the line if not wanted
+\mobile{06 13 15 85 55}				% optional, remove the line if not wanted
+%\phone{phone (optional)}			% optional, remove the line if not wanted
+%\fax{fax (optional)}				% optional, remove the line if not wanted
+\email{detour.olivier@gmail.com}		% optional, remove the line if not wanted
+\extrainfo{Permis B}				% optional, remove the line if not wanted
+%\photo[64pt]{picture}				% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{Curriculum Vitae}			% optional, remove the line if not wanted
 
-\nopagenumbers{}						% uncomment to suppress automatic page
-								% numbering for CVs longer than one page
+\nopagenumbers{}				% uncomment to suppress automatic page numbering for CVs longer than one page
 
 
 %----------------------------------------------------------------------------------
@@ -56,26 +45,12 @@
 \begin{document}
 \maketitle
 
-%\cventry{year--year}{Degree}
-%		     {Institution}{City}
-%		     {\textit{Grade}}{Description}		% arguments 3 to 6 are optional
 \section{Formation}
-\cventry{2002--2003}{Bac S spé mathématiques}
-		    {Lycée Georges Dumézil}{}
-		    {\textit{Vernon (27)}}{}			% arguments 3 to 6 are optional
-\cventry{2003--2004}{1\iere année préparatoire}
-		    {ESGI}{}
-		    {\textit{Paris 75019}}{}			% arguments 3 to 6 are optional
-\cventry{2004--2006}{Années préparatoires}
-		    {EPITA}{}
-		    {\textit{Villejuif 94800}}{}		% arguments 3 to 6 are optional
-\cventry{2006--2007}{1\iere année d'ingénierie}
-		    {EPITA}{}
-		    {\textit{Le Kremlin-Bicêtre 94270}}{} 	% arguments 3 to 6 are optional
-\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}
-		    {EPITA}{}
-		    {\textit{Le Kremlin-Bicêtre 94270}}{}	% arguments 3 to 6 are optional
-
+\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}	% arguments 3 to 6 are optional
+\cventry{2004--2007}{Tronc commun}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}				% arguments 3 to 6 are optional
+\cventry{2003--2004}{1\iere année préparatoire}{ESGI}{}{\textit{Paris 75019}}{}					% arguments 3 to 6 are optional
+\cventry{2002--2003}{Bac S spé mathématiques}{Lycée Georges Dumézil}{}{\textit{Vernon (27)}}{}			% arguments 3 to 6 are optional
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}					% arguments 3 to 6 are optional
 
 %\section{Master thesis}
 %\cvline{title}{\emph{Title}}
@@ -84,30 +59,20 @@
 
 \section{Expériences}
 \subsection{Emplois}
-\cventry{2006}{Stage dans un service technique}
-	      	    {SGT}{Champs-sur-Marne}
-		    {}{Installation de machines pour les clients de la société}		% arguments 3 to 6 are optional
-\cventry{2007}{Stage de tronc commun}
-		    {Ordissimo}{Paris}
-		    {}{Développement du gestionnaire de fichier Sfiler en C++}		% arguments 3 to 6 are optional
-\cventry{2009}{Stage de fin d'étude}
-		    {Thales Communication}{Colombes}
-		    {}{Étude de l'architecture Cavium et Linux SMP}			% arguments 3 to 6 are optional
-
+\cventry{2009--2011}{Ingénieur système \& télécom}{Thales Communication}{Colombes}{}{}					% arguments 3 to 6 are optional
+\cventry{2009}{Stage de fin d'étude}{Thales Communication}{Colombes}{}{Étude de Linux sur l'architecture Cavium}	% arguments 3 to 6 are optional
 \subsection{Tutorat}
-\cventry{2005--2006}{Soutien de mathématiques}
-		    {}{}
-		    {}{Cours pour une élève de 1\iere ES}				% arguments 3 to 6 are optional
-\cventry{2008}{Assistant YAKA/ACU 2009}
-		    {}{}
-		    {}{Encadrement de la Piscine et de nombreux projets}		% arguments 3 to 6 are optional
+\cventry{2011}{Vacataire ENSTA}{}{}{}{Encadrement d'un projet informatique (\textit{Mini NetFilter})}			% arguments 3 to 6 are optional
+\cventry{2008}{Assistant EPITA \textit{YAKA/ACU 2009}}{}{}{}{Encadrement de la Piscine et de nombreux projets}		% arguments 3 to 6 are optional
 
 \section{Compétences Informatique}
 %\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvcomputer{Langages:}{C, C++, Java, Ruby, Delphi, Caml, ASM, \LaTeX, ScriptShell (Unix), Python, Sed/Awk, Flex/Bison, Autotools}
-	   {Systèmes:}{Linux SMP, BSD, Carte Cavium (CN38XX)}
-\cvcomputer{Projets EPITA:}{Shell (42sh), Compilateur (Tiger), Système (Kaneton), Projets mathématiques}
-	   {Concepts:}{Virologie, Cryptologie, Architecture de sécurité, Gestion de risque, Techniques d'attaques}
+\cvcomputer{\textbf{Langages:}}{C, C++, Java, Ruby, Delphi, Caml, ASM, \LaTeX, ScriptShell (\textit{bash, zsh}), Python, Sed/Awk, Flex/Bison, Autotools}
+	   {\textbf{Systèmes:}}{Linux (\textit{Gentoo, Debian, Arch\dots}), BSD (\textit{OpenBSD, FreeBSD, NetBSD})}
+\cvcomputer{\textbf{Projets EPITA:}}{Shell (\textit{42sh}), Compilateur (\textit{Tiger}), Micro noyau (\textit{Kaneton}), Projets mathématiques}
+	   {\textbf{Concepts:}}{Virologie, Cryptologie, Architecture de sécurité, Gestion de risque, Techniques d'attaques, Architectures logicielles}
+\cvcomputer{}{}
+	   {\textbf{Télécom:}}{Ethernet, ATM, MPLS-TE, IP, ARP, TCP, UDP, RSVP-TE, OSPF-TE, SIP, H225/H245}
 
 \section{Langues}
 %\cvlanguage{language 1}{Skill level}{Comment}
@@ -115,9 +80,9 @@
 \cvlanguage{Espagnol}{Bac}{notions}
 
 \section{Loisirs}
-\cvline{Sport}{\small Basket Ball: pratique régulière sur Paris, Roller avec des amis}
-\cvline{Cinéma}{\small Tous genres}
-\cvline{Musique}{\small Tous genres}
+\cvline{Sport}{\small Basket Ball: pratique régulière sur Paris ou au sein de Thales, Roller avec des amis}
+\cvline{Cinéma}{\small Comédie dramatique, Polars, Actions}
+\cvline{Musique}{\small Pop, Rock, Trip-hop, Electro}
 
 %\renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
