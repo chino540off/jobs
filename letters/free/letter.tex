@@ -5,6 +5,8 @@
 \usepackage[frenchb]{babel}
 \usepackage{lmodern}
 
+\setlength{\parindent}{1cm}
+
 % adjust the page margins
 \usepackage{geometry}
 \geometry{top=1cm, bottom=1cm, left=3cm, right=3cm}
@@ -21,41 +23,54 @@
 \def\email{\Letter{} detour.olivier@gmail.com}
 \def\phone{\Telefon{} +336 13 15 85 55}
 
-\address{\textbf{\firstname{} \familyname} \\ \street \\ \zip \city \\ \email \\ \phone}
+\def\companyname{Freebox}
+\def\companyservice{Maxime Bison}
+\def\companyzip{75008}
+\def\companycity{Paris}
+
+\address{\textbf{\firstname{} \familyname} \\ \street \\ \zip{} \city}
 
 \begin{document}
-  \begin{letter}{\textbf{Lettre de motivation}}
-    \opening{Dear Sir or Madam,}
+  \begin{letter}{\companyname \\ \companyservice \\ \companyzip{} \companycity}
+    \opening{Madame, Monsieur,}
 
-\indent Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed nec sem sit amet
-lacus aliquam blandit. Nunc tristique mollis eros. Praesent elit. Maecenas turpis.
-Vestibulum consectetuer velit sit amet ipsum. Aliquam pede nunc, dictum ac,
-dictum nec, bibendum ut, ante. Phasellus justo urna, convallis vitae, scelerisque
-a, egestas vitae, diam. Cras eu enim a eros tristique varius.
+      % 1. Où j'en suis, ce que je recherche
+      \indent Je suis actuellement ingénieur système et télécom chez Thales Communication
+      \& Security. Cherchant \`a élargir mes perspectives de carrière, je me permets de vous
+      envoyer ma candidature spontanée.
+      
+      % 2. Parler de l'entreprise et la lier a mon intérêt
+      \indent Votre entreprise, par ses valeurs, répond aux enjeux d'accessibilité aux
+      télécoms de manière humaine et innovante. C'est aujourd'hui le type de projet pour
+      lequel je souhaite m'investir. En plein essor, Freebox a réussi à dynamiser le marché
+      de la téléphonie et de l'Internet mobile. Comme elle l'avait fait en créant le concept
+      de la box, votre entreprise a su offrir à ses clients une avance technologique toujours
+      renouvelée à des tarifs permettant l'ouverture à un vaste public. Dans cette logique,
+      les mises en place d'un compte SIP, d'IPv6 ou de l'EAP-SIM sur votre réseau mobile
+      sont des démarches qui suscitent tout mon intérêt.
 
-\indent Pellentesque pellentesque magna a arcu. Phasellus enim purus, pellentesque sed,
-interdum hendrerit, interdum elementum, sapien. Nunc lobortis neque sed elit
-congue tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-posuere cubilia Curae; Nam lacus mi, volutpat bibendum, ullamcorper in,
-imperdiet vel, purus. Aliquam egestas sollicitudin mauris. Maecenas quis massa
-euismod tortor interdum consectetuer. Mauris rutrum leo adipiscing erat.
+      % 3. Ce que je fais et en quoi c'est intéressant pour eux
+      \indent Dès mon arrivée au sein de Thales, j'ai mis en pratique les connaissances
+      acquises lors de ma formation. Elles ont été renforcées grâce \`a une expérience
+      de 3 ans au sein du centre de compétences système et télécom SAT/NSS.  J'ai acquis
+      de véritables connaissances système et renforcer mon savoir-faire en travaillant
+      d'une part avec du matériel embarqué et d'autre part sur des projets télécoms
+      d'envergures. Sur ces projets, j'ai collaboré avec des professionnels expérimentés
+      qui dans nos échanges m'ont permis d'acquérir de nombreuses bases d'architecture
+      logicielle système et télécom.
 
-\indent Nurabitur id mi. Morbi tempor porta neque. Curabitur nunc dui, posuere sed,
-ornare eget, pellentesque eu, nisl. Suspendisse eget nulla in nisl consequat
-vulputate. Quisque id neque. Curabitur consectetuer, risus viverra suscipit
-rutrum, tortor mauris consequat lectus, quis gravida dolor arcu a velit. Sed
-elementum sagittis pede. Fusce erat. Aliquam quis justo. Praesent justo. Fusce
-turpis justo, fermentum et, placerat quis, vestibulum sed, sem. Morbi iaculis.
-Nunc in massa.
+      \indent Mon expérience professionnelle m'a aussi permis d'acquérir un ensemble de
+      compétences lié au travail en entreprise, notamment une aisance relationnelle, un
+      goût pour le travail en équipe et des qualités d'écoute et de dialogue.
 
-\indent Nulla mi. Suspendisse potenti. Quisque sapien nisl, congue id, egestas a, lacinia
-ut, pede. Etiam vehicula nisi eu dolor. Aliquam nulla elit, dignissim nec, suscipit
-ut, cursus sit amet, dui. Sed vel lorem ut lacus sagittis egestas. Quisque justo
-nisl, convallis non, ultrices et, tempor at, pede. Phasellus orci. Morbi non velit
-blandit pede adipiscing mollis. Cras malesuada. Mauris tincidunt massa ut risus.
-Maecenas sit amet mi nec elit ultrices tincidunt. Nullam hendrerit congue ipsum.
-Fusce felis.
+      % 4. Formule de politesse vers un entretien
+      \indent Dans l'espoir de vous rencontrer lors d'un futur entretien, je vous remercie
+      de prendre ma demande en considération.
+      
+      \indent Je vous prie, Madame, Monsieur, d'accepter l'expression de mon respect sincère.
 
-    \closing{Yours Faithfully,}
+
+    \closing{M. Olivier D\'etour}
+
   \end{letter}
 \end{document}
