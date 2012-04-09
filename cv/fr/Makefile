@@ -21,7 +21,7 @@ distclean: clean
 latex: $(TARGET)
 
 $(TARGET): $(SOURCE) $(SOURCES_DEPS)
-	$(LATEX) $< -o $(TARGET) --build-dir=$(BUILD_DIR) -I "$(IMG)" -I "$(INCLUDE)"
+	$(LATEX) $< --build-dir="$(BUILD_DIR)" -I "$(IMG)" -I "$(INCLUDE)"
 
 view: $(TARGET)
 	$(VIEWER) -z page $(TARGET)

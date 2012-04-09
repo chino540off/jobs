@@ -1,42 +1,46 @@
-%% start of file `template_en.tex'.
-%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt, a4paper]{moderncv}
 
 % moderncv themes
-%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue]{casual}
+\moderncvtheme[blue]{classic}											% optional argument are 'blue' (default),
+														% 'orange', 'red', 'green', 'grey' and
+														% 'roman' (for roman fonts, instead of
+														% sans serif fonts)
 
 % character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc}											% replace by the encoding you are using
 \usepackage[frenchb]{babel}
 
 % adjust the page margins
 \usepackage[scale=0.91]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}								% only for the classic theme, if you want
+														% to change the width of your name placeholder
+														% (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}										% required when changes are made to page
+														% layout lengths
 
 % personal data
 \firstname{Olivier}
 \familyname{Détour}
-%\birth{Né le 18 septembre 1985}{Clermont Ferrand}
-\title{\Large{Ingénieur Système \& Télécom}}
-\address{84 rue Marcadet}{75018 Paris}		% optional, remove the line if not wanted
-\mobile{+336 13 15 85 55}				% optional, remove the line if not wanted
-%\phone{phone (optional)}			% optional, remove the line if not wanted
-%\fax{fax (optional)}				% optional, remove the line if not wanted
-\email{detour.olivier@gmail.com}		% optional, remove the line if not wanted
-\extrainfo{Permis B}				% optional, remove the line if not wanted
-%\photo[64pt]{picture}				% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{Curriculum Vitae}			% optional, remove the line if not wanted
+\birth{Né le 18 septembre 1985}{}
+\title{\textbf{Ingénieur système \& télécom} \\\\ \Large{> 3 ans d'expérience}}
+\address{84 rue Marcadet}{75018 Paris}										% optional, remove the line if not wanted
+\mobile{+336 13 15 85 55}											% optional, remove the line if not wanted
+%\phone{phone (optional)}											% optional, remove the line if not wanted
+%\fax{fax (optional)}												% optional, remove the line if not wanted
 
-\nopagenumbers{}				% uncomment to suppress automatic page numbering for CVs longer than one page
+\email{detour.olivier@gmail.com}										% optional, remove the line if not wanted
+\extrainfo{Permis B}												% optional, remove the line if not wanted
+
+\quote{Curriculum Vitae}											% optional, remove the line if not wanted
+
+%\photo[64pt]{picture}												% '64pt' is the height the picture must be resized
+														% to and 'picture' is the name of the picture file;
+
+														% optional, remove the line if not wanted
+
+\nopagenumbers{}												% uncomment to suppress automatic page numbering
+														% for CVs longer than one page
 
 
 %----------------------------------------------------------------------------------
@@ -45,32 +49,42 @@
 \begin{document}
 \maketitle
 
-\section{Expériences}
+\section{Expérience}
 \subsection{Emplois}
-\cventry{2009--2012}{Ingénieur Système \& Télécom}{Thales Communication}{Colombes}{France}
+\cventry{2009--2012}{Ingénieur système \& télécom}{Thales Communication}{\textit{Colombes}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
-    \item Prototype Nexium Way: Creation d'un routeur Thales implémentant les protocoles RSVP-TE et MPLS-TE via réservation SIP
-    \item Création d'une abstraction VoIP SIP/H323 pour créer des applications indépendantes de la pile VoIP
-    \item Implémentation de la RFC 6143 (IP/ICMP/v4/v6 Translation Algorithm) dans le noyau Linux
-    \item Implémentation d'une segmentation de paquets niveau 2 avec acquittement dans un NetDevice Linux
     \item Implémentation d'un protocole d'émission point \`a multipoints et de découverte de voisins
+    \item Implémentation d'une segmentation de paquets niveau 2 avec acquittement dans un NetDevice
+	Linux
+    \item Implémentation des RFCs 6051 (IPv6 Addressing of IPv4/IPv6 Translators) et 6145 (IP/ICMP/v4/v6
+	Translation Algorithm) dans le noyau Linux
+    \item Création d'une abstraction VoIP SIP/H323 et création d'applications indépendantes de la
+	pile VoIP
+    \item Prototype Nexium Way: Création d'un routeur Thales implémentant les protocoles RSVP-TE et
+	MPLS-TE via réservation SIP
   \end{itemize}
-}					% arguments 3 to 6 are optional
-\cventry{2009}{Stage de fin d'étude}{Thales Communication}{Colombes}{France}
+}														% arguments 3 to 6 are optional
+\cventry{2009}{Stage de fin d'étude}{Thales Communication}{\textit{Colombes}}{}
 {
   Étude de Linux sur l'architecture Cavium (Architecture dédiée aux performances télécom)
-}					% arguments 3 to 6 are optional
-\subsection{Tutorat}
-\cventry{2011}{Vacataire}{ENSTA}{}{}{Encadrement d'un projet informatique (\textit{Mini NetFilter})}			% arguments 3 to 6 are optional
-\cventry{2008}{Assistant \textit{YAKA/ACU 2009}}{EPITA}{}{}{Encadrement de la Piscine et de nombreux projets}		% arguments 3 to 6 are optional
+}														% arguments 3 to 6 are optional
 
-\section{Formation}
-\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}	% arguments 3 to 6 are optional
-\cventry{2004--2007}{Tronc commun}{EPITA}{}{\textit{Le Kremlin-Bic\^etre 94270}}{}				% arguments 3 to 6 are optional
-\cventry{2003--2004}{1\iere année préparatoire}{ESGI}{}{\textit{Paris 75019}}{}					% arguments 3 to 6 are optional
-\cventry{2002--2003}{Bac S spé mathématiques}{Lycée Georges Dumézil}{}{\textit{Vernon (27)}}{}			% arguments 3 to 6 are optional
+\subsection{Tutorat}
+\cventry{2011}{Vacataire}{ENSTA}{\textit{Paris}}{}
+	      {Encadrement du projet informatique \textit{Mini NetFilter} en langage C pour les étudiants
+		de 1\iere{} année}		 								% arguments 3 to 6 are optional
+\cventry{2008}{Assistant 2009}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}
+	      {Encadrement des projets UNIX/C/C++ pour les étudiants de 1\iere{} année: cours,
+		animation d'ateliers, soutien, création des sujets, évaluation, et soutenance}			% arguments 3 to 6 are optional
+
+
+\section{Cursus}
+\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}		% arguments 3 to 6 are optional
+\cventry{2004--2007}{Tronc commun}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}					% arguments 3 to 6 are optional
+\cventry{2003--2004}{1\iere{} année préparatoire}{ESGI}{\textit{Paris}}{}{}					% arguments 3 to 6 are optional
+\cventry{2002--2003}{Bac S, option mathématiques}{Lycée Georges Dumézil}{\textit{Vernon (27)}}{}{}		% arguments 3 to 6 are optional
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}					% arguments 3 to 6 are optional
 
 %\section{Master thesis}
@@ -78,40 +92,22 @@
 %\cvline{supervisors}{Supervisors}
 %\cvline{description}{\small Short thesis abstract}
 
-\section{Compétences Informatiques}
-%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-\cvcomputer{\textbf{Langages:}}{C, C++, Java, Ruby, Delphi, Caml, ASM, \LaTeX, ScriptShell (\textit{bash, zsh}), Python, Sed/Awk, Flex/Bison, Autotools}
-	   {\textbf{Télécom:}}{Ethernet, ATM, MPLS-TE, IP, ARP, TCP, UDP, TLS, RSVP-TE, OSPF-TE, SIP, H225/H245}
-
-\cvcomputer{\textbf{Projets EPITA:}}{Shell (\textit{42sh}), Compilateur (\textit{Tiger}), Micro noyau (\textit{Kaneton}), Projets mathématiques}
-	   {\textbf{Concepts:}}{Virologie, Cryptologie, Architecture de sécurité, Gestion de risque, Techniques d'attaques, Architectures logicielles}
+\section{Compétences}
+\cvlistitem{\textbf{Programmation avancée en C/C++ depuis 7 ans}, projets EPITA (micro noyau Kaneton, compilateur
+	    Tiger, shell 42sh) et projets professionnels}
+\cvlistitem{\textbf{Programmation télécom dans le noyau Linux}, maitrise du cheminement réseau de Linux}
+\cvlistitem{\textbf{Connaissances logicielle en télécom et de sécurité}, connaissances renforcées au sein de Thales}
+\cvlistitem{\textbf{Connaissances des architectures matérielles embarquées}, stage et projets sur architecture Cavium
+	    (MIPS) et PowerQUICC II et III, tests de performances sur Freescale P1010 et Marvell OMAP 3530
+	    et projet personnel sur Marvell Kirkwood (serveur IPSec)}
+\cvlistitem{\textbf{Notions d'architecture logicielle, réseau, et de sécurité}, conception d'architectures de
+	    systèmes logicielles avec des contraintes de télécom et de sécurité}
+\cvlistitem{\textbf{Connaissances de nombreux langages de script}, tels que Python, Perl ou Shell}
 
 \section{Langues}
 %\cvlanguage{language 1}{Skill level}{Comment}
 \cvlanguage{Anglais}{TOEIC 775 points}{lu, parlé, écrit, plusieurs séjours en pays anglophones}
 \cvlanguage{Espagnol}{Bac}{notions}
-
-\section{Loisirs}
-\cvline{Sport}{\small Basket Ball: pratique régulière sur Paris ou au sein de Thales, Roller avec des amis}
-\cvline{Cinéma}{\small Comédie dramatique, Polars, Actions}
-\cvline{Musique}{\small Pop, Rock, Trip-hop, Electro}
-
-%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem[+]{Item 3}            % optional other symbol
-%
-%\section{Extra 2}
-%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
-%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
-%\cvlistdoubleitem[\Neutral]{Item 3}{}
-
-% Publications from a BibTeX file
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}       % 'publications' is the name of a BibTeX file
 
 \end{document}
 
