@@ -1,29 +1,18 @@
-\documentclass[12pt]{letter}
-
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
-\usepackage[T1]{fontenc}
-\usepackage[frenchb]{babel}
-\usepackage{lmodern}
+\documentclass{moderncover}
 
 % adjust the page margins
 \usepackage{geometry}
 \geometry{top=1cm, bottom=1cm, left=3cm, right=3cm}
 
-\RequirePackage{marvosym}
-\providecommand*{\phonesymbol}{\Telefon}
-\providecommand*{\emailsymbol}{\Letter}
-
-\def\firstname{Olivier}
-\def\familyname{Détour}
-\def\street{84 rue Marcadet}
-\def\zip{75018}
-\def\city{Paris}
-\def\email{\Letter{} detour.olivier@gmail.com}
-\def\phone{\Telefon{} +336 13 15 85 55}
-
-\address{\textbf{\firstname{} \familyname} \\ \street \\ \zip \city \\ \email \\ \phone}
+\firstname{Olivier}
+\familyname{Détour}
+\address{84 rue Marcadet}{75018 Paris}
+\email{detour.olivier@gmail.com}
+\phone{+336 13 15 85 55}
 
 \begin{document}
+  \maketitle
+
   \begin{letter}{\textbf{Lettre de motivation}}
     \opening{Dear Sir or Madam,}
 
