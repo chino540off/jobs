@@ -1,0 +1,107 @@
+\documentclass[11pt, a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}
+\moderncvtheme[blue]{classic}											% optional argument are 'blue' (default),
+\moderncvstyle{classic}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{blue}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
+														% 'orange', 'red', 'green', 'grey' and
+														% 'roman' (for roman fonts, instead of
+														% sans serif fonts)
+
+% character encoding
+\usepackage[utf8]{inputenc}											% replace by the encoding you are using
+\usepackage[frenchb,english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.91]{geometry}
+\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}								% only for the classic theme, if you want
+														% to change the width of your name placeholder
+														% (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}										% required when changes are made to page
+														% layout lengths
+
+% personal data
+\firstname{Olivier}
+\familyname{Détour}
+\title{\textbf{Ingénieur système \& télécom}}
+\address{84 rue Marcadet}{75018 Paris}										% optional, remove the line if not wanted
+\mobile{+336 13 15 85 55}											% optional, remove the line if not wanted
+%\phone{phone (optional)}											% optional, remove the line if not wanted
+%\fax{fax (optional)}												% optional, remove the line if not wanted
+
+\email{detour.olivier@gmail.com}										% optional, remove the line if not wanted
+\extrainfo{Permis B}												% optional, remove the line if not wanted
+
+\quote{Curriculum Vitae}											% optional, remove the line if not wanted
+
+%\photo[64pt]{picture}												% '64pt' is the height the picture must be resized
+														% to and 'picture' is the name of the picture file;
+
+														% optional, remove the line if not wanted
+
+\nopagenumbers{}												% uncomment to suppress automatic page numbering
+														% for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Expérience}
+\subsection{Emplois}
+\cventry{2009--2012}{Ingénieur système \& télécom}{Thales Communication}{\textit{Colombes}}{}
+{
+  \begin{itemize}
+    \renewcommand{\labelitemi}{$\bullet$  }
+    \item Implémentation d'un protocole d'émission point \`a multipoints et de découverte de voisins
+    \item Implémentation d'une segmentation de paquets niveau 2 avec acquittement dans un NetDevice
+	Linux
+    \item Implémentation des RFCs 6051 (IPv6 Addressing of IPv4/IPv6 Translators) et 6145 (IP/ICMP/v4/v6
+	Translation Algorithm) dans le noyau Linux
+    \item Création d'une abstraction VoIP SIP/H323 et création d'applications indépendantes de la
+	pile VoIP
+    \item Prototype Nexium Way: Création d'un routeur Thales implémentant les protocoles RSVP-TE et
+	MPLS-TE via réservation SIP
+  \end{itemize}
+}
+\cventry{2009}{Stage de fin d'étude}{Thales Communication}{\textit{Colombes}}{}
+{
+  Étude de Linux sur l'architecture Cavium (Architecture dédiée aux performances télécom)
+}
+
+\subsection{Tutorat}
+\cventry{2011}{Vacataire}{ENSTA}{\textit{Paris}}{}
+	      {Encadrement du projet informatique \textit{Mini NetFilter} en langage C pour les étudiants
+		de 1\iere\ année}
+\cventry{2008}{Assistant 2009}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}
+	      {Encadrement des projets UNIX/C/C++ pour les étudiants de 1\iere\ année: cours,
+		animation d'ateliers, soutien, création des sujets, évaluation, et soutenance}
+
+
+\section{Cursus}
+\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
+\cventry{2004--2007}{Tronc commun}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
+\cventry{2003--2004}{1\iere\ année préparatoire}{ESGI}{\textit{Paris}}{}{}
+\cventry{2002--2003}{Bac S, option mathématiques}{Lycée Georges Dumézil}{\textit{Vernon (27)}}{}{}
+
+\section{Compétences}
+\cvlistitem{\textbf{Programmation avancée en C/C++ depuis 7 ans}, projets EPITA (micro noyau Kaneton, compilateur
+	    Tiger, shell 42sh) et projets professionnels}
+\cvlistitem{\textbf{Programmation télécom dans le noyau Linux}, maitrise du cheminement réseau de Linux}
+\cvlistitem{\textbf{Connaissances logicielle en télécom et de sécurité}, connaissances renforcées au sein de Thales}
+\cvlistitem{\textbf{Connaissances des architectures matérielles embarquées}, stage et projets sur architecture Cavium
+	    (MIPS) et PowerQUICC II et III, tests de performances sur Freescale P1010 et Marvell OMAP 3530
+	    et projet personnel sur Marvell Kirkwood (serveur IPSec)}
+\cvlistitem{\textbf{Notions d'architecture logicielle, réseau, et de sécurité}, conception d'architectures de
+	    systèmes logicielles avec des contraintes de télécom et de sécurité}
+\cvlistitem{\textbf{Connaissances de nombreux langages de script}, tels que Python, Perl ou Shell}
+
+\section{Langues}
+\cvlanguage{Anglais}{TOEIC 775 points}{lu, parlé, écrit, plusieurs séjours en pays anglophones}
+\cvlanguage{Espagnol}{Bac}{notions}
+
+\end{document}
+
