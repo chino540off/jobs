@@ -6,7 +6,7 @@ VIEWER		= xpdf
 
 TODEL		= tags *~ .*.swp *.log *.aux *.dvi *.png
 
-INCLUDE		= ../template
+INCLUDE		= ../moderncv/
 IMG		= ./data
 BUILD_DIR	= ./tmp
 
