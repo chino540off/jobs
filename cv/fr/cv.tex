@@ -1,20 +1,15 @@
 \documentclass[11pt, a4paper]{moderncv}
 
 % moderncv themes
-%\moderncvtheme[blue]{casual}
-\moderncvtheme[blue]{classic}											% optional argument are 'blue' (default),
-\moderncvstyle{classic}                        % las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
-\moderncvcolor{blue}                          % opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
-														% 'orange', 'red', 'green', 'grey' and
-														% 'roman' (for roman fonts, instead of
-														% sans serif fonts)
+\moderncvstyle{classic}												% las opciones de estilo son 'casual' (por omision),'classic', 'oldstyle' y 'banking'
+\moderncvcolor{blue}												% opciones de color 'blue' (por omision), 'orange', 'green', 'red', 'purple', 'grey' y 'black'
 
 % character encoding
 \usepackage[utf8]{inputenc}											% replace by the encoding you are using
 \usepackage[frenchb,english]{babel}
 
 % adjust the page margins
-\usepackage[scale=0.91]{geometry}
+\usepackage[scale=0.93]{geometry}
 \AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}								% only for the classic theme, if you want
 														% to change the width of your name placeholder
 														% (to leave more space for your address details
@@ -24,7 +19,7 @@
 % personal data
 \firstname{Olivier}
 \familyname{Détour}
-\title{\textbf{Ingénieur système \& télécom}}
+\title{\textbf{Ingénieur système \& télécom}\newline \Large{\textit{> 3 ans d'expérience}}}
 \address{84 rue Marcadet}{75018 Paris}										% optional, remove the line if not wanted
 \mobile{+336 13 15 85 55}											% optional, remove the line if not wanted
 %\phone{phone (optional)}											% optional, remove the line if not wanted
@@ -52,19 +47,22 @@
 
 \section{Expérience}
 \subsection{Emplois}
-\cventry{2009--2012}{Ingénieur système \& télécom}{Thales Communication}{\textit{Colombes}}{}
+\cventry{2009--2013}{Ingénieur système \& télécom}{Thales Communication \& Security}{\textit{Colombes}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
-    \item Implémentation d'un protocole d'émission point \`a multipoints et de découverte de voisins
+    \item Prototype d'un Forwarder IPv4/IPv6 avancé dans le noyau Linux avec apport de valeurs ajoutées
+	Thales comme des modes de diffusion non implémentés (XCAST6, GeoCAST), ou utilisant des mécanismes
+	de routage particuliers (algorithme multi-critères)
+    \item \textbf{Implémentation d'un algorithme de simplification de topologie multi-critères en C99 puis en C++11}
+    \item Implémentation d'un protocole d'émission de trames point \`a multi-points et de découverte
+	de voisins sur Ethernet
     \item Implémentation d'une segmentation de paquets niveau 2 avec acquittement dans un NetDevice
-	Linux
+	Linux et mecanisme de FEC (Forward Error Correction)
     \item Implémentation des RFCs 6051 (IPv6 Addressing of IPv4/IPv6 Translators) et 6145 (IP/ICMP/v4/v6
 	Translation Algorithm) dans le noyau Linux
     \item Création d'une abstraction VoIP SIP/H323 et création d'applications indépendantes de la
 	pile VoIP
-    \item Prototype Nexium Way: Création d'un routeur Thales implémentant les protocoles RSVP-TE et
-	MPLS-TE via réservation SIP
   \end{itemize}
 }
 \cventry{2009}{Stage de fin d'étude}{Thales Communication}{\textit{Colombes}}{}
@@ -82,25 +80,24 @@
 
 
 \section{Cursus}
-\cventry{2008}{Spécialisation Système, Réseaux et Sécurité}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
-\cventry{2004--2007}{Tronc commun}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
-\cventry{2003--2004}{1\iere\ année préparatoire}{ESGI}{\textit{Paris}}{}{}
-\cventry{2002--2003}{Bac S, option mathématiques}{Lycée Georges Dumézil}{\textit{Vernon (27)}}{}{}
+%\cventry{2008}{}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
+\cventry{2004--2009}{EPITA}{Spécialisation Système, Réseaux et Sécurité}{\textit{Le Kremlin-Bic\^etre}}{}{}
+\cventry{2002--2003}{Baccalauréat}{Section Scientifique, option mathématique}{Lycée Georges Dumézil, \textit{Vernon (27)}}{}{}
+%\cventry{2000--2001}{Grado}{Instituci\'on}{Ville}{}{Description}  % Los argumentos del 3 al 6 pueden permanecer vacios
 
 \section{Compétences}
-\cvlistitem{\textbf{Programmation avancée en C/C++ depuis 7 ans}, projets EPITA (micro noyau Kaneton, compilateur
-	    Tiger, shell 42sh) et projets professionnels}
+\cvlistitem{\textbf{Programmation avancée en C/C++ depuis 7 ans}, projets EPITA et projets professionnels}
 \cvlistitem{\textbf{Programmation télécom dans le noyau Linux}, maitrise du cheminement réseau de Linux}
-\cvlistitem{\textbf{Connaissances logicielle en télécom et de sécurité}, connaissances renforcées au sein de Thales}
-\cvlistitem{\textbf{Connaissances des architectures matérielles embarquées}, stage et projets sur architecture Cavium
-	    (MIPS) et PowerQUICC II et III, tests de performances sur Freescale P1010 et Marvell OMAP 3530
+\cvlistitem{\textbf{Connaissances logicielles en télécom et de sécurité}, connaissances renforcées au sein de Thales}
+\cvlistitem{\textbf{Connaissances des architectures matérielles embarquées}, stage et projets sur architecture MIPS
+	    (Cavium) et PowerPC (PowerQUICC II et III), tests de performances sur ARM (Freescale P1010, iMX6, et Marvell OMAP 3530)
 	    et projet personnel sur Marvell Kirkwood (serveur IPSec)}
 \cvlistitem{\textbf{Notions d'architecture logicielle, réseau, et de sécurité}, conception d'architectures de
-	    systèmes logicielles avec des contraintes de télécom et de sécurité}
+	    systèmes logiciels avec des contraintes télécom et de sécurité}
 \cvlistitem{\textbf{Connaissances de nombreux langages de script}, tels que Python, Perl ou Shell}
 
 \section{Langues}
-\cvlanguage{Anglais}{TOEIC 775 points}{lu, parlé, écrit, plusieurs séjours en pays anglophones}
+\cvlanguage{Anglais}{TOEIC 775 points}{courant, plusieurs séjours en pays anglophones}
 \cvlanguage{Espagnol}{Bac}{notions}
 
 \end{document}

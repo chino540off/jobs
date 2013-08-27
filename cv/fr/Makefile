@@ -7,7 +7,7 @@ VIEWER		= xpdf
 TODEL		= tags *~ .*.swp *.log *.aux *.dvi *.png
 
 INCLUDE		= ../moderncv/
-IMG		= ./data
+IMG		= ../data
 BUILD_DIR	= ./tmp
 
 all: latex
