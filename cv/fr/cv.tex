@@ -6,11 +6,11 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}											% replace by the encoding you are using
-\usepackage[frenchb,english]{babel}
+\usepackage[frenchb]{babel}
 
 % adjust the page margins
 \usepackage[scale=0.93]{geometry}
-\AtBeginDocument{\setlength{\maketitlenamewidth}{10cm}}								% only for the classic theme, if you want
+\AtBeginDocument{\setlength{\maketitlenamewidth}{13cm}}								% only for the classic theme, if you want
 														% to change the width of your name placeholder
 														% (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}										% required when changes are made to page
@@ -19,9 +19,9 @@
 % personal data
 \firstname{Olivier}
 \familyname{Détour}
-\title{\textbf{Ingénieur système \& télécom}\newline \Large{\textit{> 3 ans d'expérience}}}
+\title{\textbf{Ingénieur système \& télécom}\newline \Large{\textit{> 4 ans d'expérience}}}
 \address{84 rue Marcadet}{75018 Paris}										% optional, remove the line if not wanted
-\mobile{+336 13 15 85 55}											% optional, remove the line if not wanted
+\mobile{+33 6 13 15 85 55}											% optional, remove the line if not wanted
 %\phone{phone (optional)}											% optional, remove the line if not wanted
 %\fax{fax (optional)}												% optional, remove the line if not wanted
 
@@ -47,10 +47,12 @@
 
 \section{Expérience}
 \subsection{Emplois}
-\cventry{2009--2013}{Ingénieur système \& télécom}{Thales Communication \& Security}{\textit{Colombes}}{}
+\cventry{2009--2013}{Ingénieur système \& télécom}{Thales Communication \& Security}{\textit{Gennevilliers}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
+    \item Création d'une abstraction VoIP SIP/H323 et création d'applications indépendantes de la
+	pile VoIP
     \item Prototype d'un Forwarder IPv4/IPv6 avancé dans le noyau Linux avec apport de valeurs ajoutées
 	Thales comme des modes de diffusion non implémentés (XCAST6, GeoCAST), ou utilisant des mécanismes
 	de routage particuliers (algorithme multi-critères)
@@ -61,8 +63,6 @@
 	Linux et mecanisme de FEC (Forward Error Correction)
     \item Implémentation des RFCs 6051 (IPv6 Addressing of IPv4/IPv6 Translators) et 6145 (IP/ICMP/v4/v6
 	Translation Algorithm) dans le noyau Linux
-    \item Création d'une abstraction VoIP SIP/H323 et création d'applications indépendantes de la
-	pile VoIP
   \end{itemize}
 }
 \cventry{2009}{Stage de fin d'étude}{Thales Communication}{\textit{Colombes}}{}
@@ -80,10 +80,9 @@
 
 
 \section{Cursus}
-%\cventry{2008}{}{EPITA}{\textit{Le Kremlin-Bic\^etre}}{}{}
 \cventry{2004--2009}{EPITA}{Spécialisation Système, Réseaux et Sécurité}{\textit{Le Kremlin-Bic\^etre}}{}{}
 \cventry{2002--2003}{Baccalauréat}{Section Scientifique, option mathématique}{Lycée Georges Dumézil, \textit{Vernon (27)}}{}{}
-%\cventry{2000--2001}{Grado}{Instituci\'on}{Ville}{}{Description}  % Los argumentos del 3 al 6 pueden permanecer vacios
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 are optional
 
 \section{Compétences}
 \cvlistitem{\textbf{Programmation avancée en C/C++ depuis 7 ans}, projets EPITA et projets professionnels}
