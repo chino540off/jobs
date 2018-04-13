@@ -24,10 +24,12 @@
 % personal data
 \firstname{Olivier}
 \familyname{Détour}
-\title{\textbf{Research \& Development Engineer}\newline \Large{\textit{> 6 years of professional experience}}}
+\title{\textbf{Technical Leader}
+       \newline \Large{\textit{Research \& Development Engineer}}
+       \newline \large{\textit{EPITA SRS 2009}}}
 
 % optional, remove the line if not wanted
-\address{84 rue Marcadet}{75018 Paris}
+\address{1 rue d'Agadir}{69600 Oullins}
 % optional, remove the line if not wanted
 \mobile{+33 6 13 15 85 55}
 % optional, remove the line if not wanted
@@ -45,7 +47,7 @@
 
 % '64pt' is the height the picture must be resized
 % to and 'picture' is the name of the picture file;
-%\photo[64pt]{picture}
+\photo[92pt][0pt]{picture}
 
 % uncomment to suppress automatic page numbering
 % for CVs longer than one page
@@ -60,52 +62,83 @@
 
 \section{Experience}
 \subsection{Professional}
-\cventry{2015--Today}{Infrastructure \& Network Engineer}{CodeCase Software}{\textit{La Defense}}{}
+\cventry{}{Scality}{made the RING, a distributed storage solution}{}{}{}
+\cventry{2017--Today}{Technical Leader}{Scality}{\textit{Paris}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
-    \item Specify requirements of the CodeCase Software's infrastructure.
-    \item Migrate old virtualization solution to Citrix XenServer solution.
+    \item Leading design, development, and tests of the asynchronous \textbf{GEOS} system
+      \begin{itemize}
+        \item Redesign the File System logs part to support a concurrent connectors cluster
+        \item Lead 2 people: implementation, and tests setup
+      \end{itemize}
   \end{itemize}
 }
-\cventry{2014--Today}{Research \& Development Engineer}{CodeCase Software}{\textit{La Defense}}{}
+\cventry{2016--2017}{Research \& Development Engineer}{Scality}{\textit{Paris}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
+    \item Participate in active support of existing features and design of new features
+    \item Redesign the Scality Virtual Server Daemon based on \textbf{Zookeeper} 
+    \item Participate in design and active support of the asynchronous \textbf{GEOS}
+      replication of data between data centers
+      \begin{itemize}
+        \item Every low level File System events are logged via a journal
+        \item Multi connectors handled via revisions cross objects
+        \item All logs are aggregated into a graph in order to reduce operations
+        \item Replications are made in a specific connector to allow atomic operations
+      \end{itemize}
+    \item Participate in active support of the \textbf{CDMI} connector (\url{https://www.snia.org/cdmi})
+  \end{itemize}
+}
+\vspace{1em}
+\cventry{}{CodeCase Software}{created a tool to transform a source code base to another language}{}{}{}
+\cventry{2015--2016}{Infrastructure \& Network Engineer}{CodeCase Software}{\textit{La Defense}}{}
+{
+  \begin{itemize}
+    \renewcommand{\labelitemi}{$\bullet$  }
+    \item Specify requirements of the CodeCase Software's infrastructure
+    \item Migrate old virtualization solution to Citrix XenServer solution
+  \end{itemize}
+}
+\cventry{2014--2016}{Research \& Development Engineer}{CodeCase Software}{\textit{La Defense}}{}
+{
+  \begin{itemize}
+    \renewcommand{\labelitemi}{$\bullet$  }
+    \item Architecture new features in the core engine (design, development, \& tests)
     \item Massive improvement of the reverse engineering core:
       \begin{itemize}
-        \item reduction of memory footprint of the call binder;
-        \item performance improvement of the type unicity manager.
+        \item reduction of memory footprint of the call binder
+        \item performance improvement of the type unicity manager
       \end{itemize}
-    \item Creation of a NoSQL javascript library based on MongoDB.
   \end{itemize}
 }
-\cventry{2014--Today}{Consulting Engineer}{CodeCase Software}{\textit{La Defense}}{}
+\cventry{2014--2016}{Consulting Engineer}{CodeCase Software}{\textit{La Defense}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
-    \item Gap analysis of an old VB6 application at TF1 Publicit\'e
     \item Refactoring of an old Delphi application into a Java J2EE application at BREDBDD
-    \item Refactoring of an old VB6 application into a .NET4.0 WCF application at TF1 Publicit\'e
-    \item Refactoring of a pricing library in order to make it independant at CTY
+    \item Gap analysis \& Refactoring of an old VB6 application into a .NET4.0 WCF application at TF1 Publicit\'e
+    \item Refactoring of a pricing library in order to make it independent at CTY
   \end{itemize}
 }
+\vspace{1em}
 \cventry{2009--2014}{Research \& Development Engineer}{Thales Communications \& Security}{\textit{Gennevilliers}}{}
 {
   \begin{itemize}
     \renewcommand{\labelitemi}{$\bullet$  }
     \item Creation of a VoIP abstraction API over SIP/H223 and implementation of associated interfacing software
-      components.
+      components
     \item Implementation of \textbf{RFC 6051} (IPv6 Addressing of IPv4/IPv6 Translators) and \textbf{RFC 6145} (IP/ICMP/v4/v6
-      Translation Algorithm) in kernel Linux.
+      Translation Algorithm) in kernel Linux
     \item Implementation of a packets segmentation module with acknowledgments and \textbf{FEC} (Forward Error Correction)
-      mechanisms in a \textbf{Linux Netdevice}.
-    \item Implementation of a point-to-multipoint transmission and neighbor discovery protocol.
-    \item Implementation of a reduction algorithm for multi-criteria topology, developed in \textbf{C++11}.
+      mechanisms in a \textbf{Linux Netdevice}
+    \item Implementation of a point-to-multipoint transmission and neighbor discovery protocol
+    \item Implementation of a reduction algorithm for multi-criteria topology, developed in \textbf{C++11}
     \item Prototype of an advanced Linux-based IP forwarder, providing casting mode like \textbf{XCast} or \textbf{Geocast},
-      by using different routing mechanisms (multi-criteria algorithm).
+      by using different routing mechanisms (multi-criteria algorithm)
     \item Study of Netgraph framework for Linux 3.0 provided by \textbf{LANA} (Lightweight Autonomic Network Architecture),
-      and implementation in a modular design for a tactical router.
+      and implementation in a modular design for a tactical router
   \end{itemize}
 }
 \cventry{2009}{Final year internship}{Thales Communications \& Security}{\textit{Colombes}}{}
@@ -120,28 +153,38 @@
 		{UNIX/C/C++ introductory course for first-year students, course syllabus preparation: lectures, lab sessions,
 			supplemental tutoring, exam questions redaction (written/oral), students evaluation}
 
-\newpage
 \section{Education}
 \cventry{2004--2009}{EPITA}{System, Network \& Security specialization}
 			{\textit{Le Kremlin-Bic\^etre}}{}{}
 \cventry{2002--2003}{Baccalaureate}{Science stream, mathematics specialization}
 			{Georges Dumézil high school, \textit{Vernon (27)}}{}{}
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 are optional
 
 \section{Skills}
-\cvlistitem{\textbf{Advanced programming skills in C/C++ for 7 years}, educational and professional projects}
+\cvlistitem{\textbf{Advanced programming skills in C/C++ for 10 years}, educational and professional projects}
 \cvlistitem{\textbf{Advanced network programming skills in the Linux kernel}, mastery of proficient in Linux's network stack}
+\cvlistitem{\textbf{Strong software architecture and design}, network \& distributed system}
+\cvlistitem{\textbf{Strong script language skills}, such as Python, Perl, Ruby or Bash}
 \cvlistitem{\textbf{Strong network and security programming skills}, acquired through project responsibilities in Thales}
 \cvlistitem{\textbf{Strong embedded architectures skills}, internship and projects on MIPS-based processors
 		(Cavium Octeon) \& PowerPC-based (PowerQUICC II \& III), performance tests on ARM-based processors
 		(Freescale P1010, iMX6, \& Marvell OMAP 3530) and personal projects on Marvell Kirkwood (IPSec gateway)}
 \cvlistitem{\textbf{Good network and security design concepts}, taking part of many design task forces to work on
-		embedded system architecture with performance and security constraints.
-\cvlistitem{\textbf{Strong script language skills}, such as Python, Perl, Ruby or Bash}
+                embedded system architecture with performance and security constraints}
+
+\section{Personal contributions}
+\cvitem{Github}{\url{https://github.com/chino540off}}
+\cvitem{Silicon}{\url{https://github.com/matt-42/silicon}}
 
 \section{Languages}
 \cvlanguage{French}{Mother tongue}{}
-\cvlanguage{English}{TOEIC 775 points}{fluent, many trips in English speaking countries}
-\cvlanguage{Spanish}{Baccalaureate level}{Basic level}
+\cvlanguage{English}{Fluent}{}
+\cvlanguage{Spanish}{Academic}{}
+
+\section{Interests}
+\cvlistdoubleitem{Basket ball}{Musics}
+\cvlistdoubleitem{Inline skating}{Movies}
+\cvlistdoubleitem{Mountain biking}{}
+\cvlistdoubleitem{Bouldering}{}
+
 
 \end{document}
