@@ -1,7 +1,7 @@
 SOURCE		= cv.tex
 TARGET		= $(SOURCE:.tex=.pdf)
 
-LATEX   	?= texi2pdf
+LATEX   	?= pdflatex
 VIEWER		= xpdf
 
 TODEL		= tags *~ .*.swp *.log *.aux *.dvi *.png
